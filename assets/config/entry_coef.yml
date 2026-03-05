@@ -258,3 +258,38 @@ Iuno:
   coef: 
     resonance_burst: 0.60
     resonance_eff: 1
+
+Chisa:
+  name: "千咲"
+  dmg_source: "atk"
+  coef: 
+    resonance_burst: 0.60
+    resonance_eff: 1
+
+Lynae:
+  name: "琳奈"
+  dmg_source: "atk"
+  coef: 
+    resonance_burst: 0.60
+    resonance_eff: 1
+
+Monin:
+  name: "莫宁"
+  dmg_source: "atk"
+  coef: 
+    resonance_burst: 0.60
+    resonance_eff: 1
+
+Luuk:
+  name: "陆·赫斯"
+  dmg_source: "atk"
+  coef: 
+    resonance_burst: 0.60
+    resonance_eff: 1
+
+Aemeath:
+  name: "爱弥斯"
+  dmg_source: "atk"
+  coef: 
+    resonance_burst: 0.60
+    resonance_eff: 1
