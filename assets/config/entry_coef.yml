@@ -291,5 +291,9 @@ Aemeath:
   name: "爱弥斯"
   dmg_source: "atk"
   coef: 
-    resonance_burst: 0.60
-    resonance_eff: 1
+    cri_rate: 2
+    cri_dmg: 1
+    atk_rate: 1.1
+    atk_num: 0.12
+    resonance_eff: 0.2
+    resonance_burst: 0.77

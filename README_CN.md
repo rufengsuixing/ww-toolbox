@@ -133,12 +133,12 @@ npm start .
 
 ## 📖 文档
 
-手动数据更新方式（安装版可以手动替换resources下相关目录）
-assets\imgs下char、echo、suit文件夹执行 python fetch.py，自动更新图片
-assets\characters.txt 更新新人物名称
-assets\echo.json 通过 generate_tools/echo.html 通过填入数据库链接的网页内容生成，后续会更新更方便的方式
-assets\suit.txt 手动更新套装名称，后续会更新更方便的方式。
-assets\config\entry_coef.yml 修改人物初始词条比重
+手动数据更新方式（安装版可以手动替换resources下相关目录） 
+assets\imgs下char、echo、suit文件夹执行 python fetch.py，自动更新图片 
+assets\characters.txt 更新新人物名称 
+assets\echo.json 通过 generate_tools/echo.html 通过填入数据库链接的网页内容生成，后续会更新更方便的方式 
+assets\suit.txt 手动更新套装名称，后续会更新更方便的方式。 
+assets\config\entry_coef.yml 修改人物初始词条比重 
 
 ## 📜 开源协议
 

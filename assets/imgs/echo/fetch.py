@@ -11,16 +11,22 @@ names = re.findall(r'<div class="name"><span>(.+?)</span></div>', html)
 links = re.findall(r'<div class="head"><img src="(.+?)"></div>', html)
 
 metadata = []
-
+change_res = ["冠顶苍隼"]
+change_target = ["共鸣回响·冠顶苍隼"]
 force = False
 
 for (name, link) in zip(names, links):
     full_link = base_url + link
     print(full_link)
     img_name = os.path.basename(link)
+    try:
+        index = change_res.index(name)
+        name = change_target[index]
+    except ValueError:
+        pass
     metadata.append({
         "name": name,
-        "image": f"{img_name}"
+        "file": f"{img_name}"
     })
     if force == False and os.path.exists(img_name):
         continue
