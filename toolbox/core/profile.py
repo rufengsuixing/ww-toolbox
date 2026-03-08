@@ -14,6 +14,7 @@ from toolbox.utils.logger import logger
 stat_file = get_config_dir() / "entry_stats.yml"
 coef_file = get_config_dir() / "entry_coef.yml"
 echo_file = get_assets_dir() / "echo.json"
+ocr_rare_char_file = get_assets_dir() / "ocr_rare_char.json"
 
 with open(stat_file, "r", encoding="utf-8") as f:
     stat_data = yaml.safe_load(f)
@@ -23,6 +24,11 @@ with open(coef_file, "r", encoding="utf-8") as f:
 
 with open(echo_file, "r", encoding="utf-8") as f:
     echo_data = json.load(f)
+
+with open(ocr_rare_char_file, "r", encoding="utf-8") as f:
+    ocr_rare_data = json.load(f)
+
+rare_chars = ocr_rare_data["char"]
 
 @dataclass
 class DiscardScheduler:
@@ -206,7 +212,7 @@ class EchoProfile:
                 for name in echo_data.keys():
                     # create a regex pattern for the name to ignore rare characters 
                     # and match the line with the pattern
-                    rare_chars = ['魇', '螯', '獠', '鬃', '翎', '鸷', '鹭', '傀', '哨', '蜥', '磐', '铎', '镰', '簇', '湮', '釉', '蛰', '鳄', '飓', '芙']
+                    #rare_chars = ['魇', '螯', '獠', '鬃', '翎', '鸷', '鹭', '傀', '哨', '蜥', '磐', '铎', '镰', '簇', '湮', '釉', '蛰', '鳄', '飓', '芙']
                     ignore_chars = ['·']
 
                     substituted_name = name
